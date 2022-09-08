@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/agenda"
+    tools:context=".registro">
+
+    <EditText
+        android:id="@+id/edtIdUsuario"
+        android:layout_width="391dp"
+        android:layout_height="81dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#5A5A5A"
+        android:textColorLink="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="237dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#2196F3"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTelefono"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <EditText
+        android:id="@+id/edtTelefono"
+        android:layout_width="391dp"
+        android:layout_height="87dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#5A5A5A"
+        android:textColorLink="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsuaioAlta"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <EditText
+        android:id="@+id/edtUsuaioAlta"
+        android:layout_width="391dp"
+        android:layout_height="90dp"
+        android:ems="10"
+        android:hint="Nombre Referncia"
+        android:inputType="textPersonName"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#5A5A5A"
+        android:textColorLink="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtIdUsuario"
+        app:layout_constraintVertical_bias="0.04" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
